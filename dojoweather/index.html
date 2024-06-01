@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="navbarcontainer">
+            <div class="navbartitle">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="navbarlinks">
+                <ul>
+                    <li><button onclick="alert('Loading weather report')">Burbank</button></li>
+                    <li><button onclick="alert('Loading weather report')">Chicago</button></li>
+                    <li><button onclick="alert('Loading weather report')">Dallas</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bodycontainer">
+            <div class="cityheader">
+                <h2>San Jose</h2>
+                <div class="temp-change">
+                    <label>show temperature in:</label>
+                    <select onchange="changeTemp(this)">
+                        <option id="celsius">
+                            C
+                        </option>
+                        <option id="fahrenheit">
+                            F
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="weathercontainer">
+                <div class="daycard">
+                    <h1>Today</h1>
+                    <img src="assets/some_rain.png" alt="rain">
+                    <div class="highlow">
+                        <span class="high" id="wedhigh">24°</span>
+                        <span class="low" id="wedlow">18°</span>
+                    </div>
+                </div>
+                <div class="daycard">
+                    <h1>Tomorrow</h1>
+                    <img src="assets/some_sun.png" alt="sun">
+                    <div class="highlow">
+                        <span class="high" id="thurshigh">27°</span>
+                        <span class="low" id="thurslow">19°</span>
+                    </div>
+                </div>
+                <div class="daycard">
+                    <h1>Friday</h1>
+                    <img src="assets/some_clouds.png" alt="cloud">
+                    <div class="highlow">
+                        <div class="high" id="frihigh">21°</div>
+                        <div class="low" id="frilow">16°</div>
+                    </div>
+                </div>
+                <div class="daycard">
+                    <h1>Saturday</h1>
+                    <img src="assets/some_sun.png" alt="sun">
+                    <div class="highlow">
+                        <span class="high" id="sathigh">26°</span>
+                        <span class="low" id="satlow">21°</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cookiecontainer">
+                <div class="cookieimage">
+                    <img src="assets/cookie.png" alt="cookie">
+                </div>
+                <div class="cookiemessage">
+                    <h1>Stop! Cookie time</h1>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <div class="cookieaccept">
+                    <button onclick="hide(cookieContainer)">I accept</button>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

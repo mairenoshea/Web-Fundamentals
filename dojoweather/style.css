@@ -1,0 +1,168 @@
+* {
+    padding:0px;
+    margin: 0px auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbarcontainer {
+    height:100px;
+    padding:0px 150px 0px 200px;
+    background-color:rgb(126, 193, 215);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbartitle {
+    flex:1;
+}
+
+.navbartitle h1 {
+    font-size:40px;
+    color:white;
+}
+
+.navbarlinks {
+    flex:2;
+}
+
+.navbarlinks ul {
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.navbarlinks li {
+    display:inline-block;
+    font-size:22px;
+    color:white;
+}
+.navbarlinks button {
+    background-color:inherit;
+    color:inherit;
+    font-size:inherit;
+    border:none;
+}   
+.bodycontainer{
+    margin:0px 150px 0px 200px;
+}
+
+.cityheader {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:2px solid black;
+    padding:10px;
+    margin-top:5px;
+}
+.temp-change {
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    
+}
+.cityheader h2 {
+    margin-left:0px;
+    flex:1;
+}
+
+.temp-change label {
+    margin:0px;
+    font-size:14px;
+}
+
+select {
+    margin:0px 0px 0px 3px;
+}
+
+.weathercontainer {
+    display:flex;
+    align-items:flex-start;
+    padding-top:20px;
+}
+
+.daycard {
+    flex:1;
+    display:inline-block;
+    text-align:center;
+    padding:0px;
+}
+
+.daycard h1 {
+    font-size:22px;
+}
+
+.daycard img {
+    width:200px;
+    align-items:center;
+}
+
+.highlow {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin:0px 10px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.highlow .high {
+    color:red;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.highlow .low {
+    color:blue;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.cookiecontainer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;;
+    padding:10px 120px;
+    position:fixed;
+    margin-right:150px;
+}
+
+.cookieimage {
+    flex:0.25;
+    background-color:white;
+}
+
+.cookieimage img {
+    width:50px;
+    padding:5px;
+}
+
+.cookiemessage {
+    flex:1.75;
+    padding-left:10px;
+    background-color:white;
+}
+
+.cookiemessage h1 {
+    font-size:24px;
+}
+
+.cookiemessage p {
+    font-size:14px;
+}
+
+.cookieaccept button {
+    background-color:rgb(19, 186, 186);
+    border:2px solid black;
+    color:black;
+    box-shadow:2px 2px black;
+    padding:5px;
+}
+
+.cookieaccept {
+    flex:0.5;
+    padding:5px;
+    display:flex;
+    align-items:center;
+    background-color:white;
+}
